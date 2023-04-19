@@ -7,10 +7,6 @@
     background-size: cover;
 }
 
-.mat-h1, .mat-headline-5, .mat-typography .mat-h1, .mat-typography .mat-headline-5, .mat-typography h1 {
-    font: unset;
-}
-
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,8 +22,6 @@
 
 
 .main__content h1 {
-    font-size: 4rem;
-    font: unset;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -39,9 +33,6 @@
 }
 
 .main__content h2 {
-    font-size: 4rem;
-    font: unset;
-    font-family: 'Kumbh Sans' ;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
     background-size: 100%;
@@ -165,5 +156,4 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
-
 }

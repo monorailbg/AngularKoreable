@@ -1,22 +1,31 @@
 <div class="wrapper">
     <div class="form-box login">
         <h2>Login</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="ion ion-md-attach icon">mail-outline</span>
-                <input type="email" required>
-                <label>Email</label>
+        <div [formGroup]="loginForm">
+            <p>
+                <mat-form-field appearance="outline" style="width: 100%">
+                    <mat-label class="white">Please enter an email address</mat-label>
+                    <input class="white input" matInput formControlName="email" placeholder="Email">
+                    <mat-icon matSuffix>email</mat-icon>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline" style="width: 100%">
+                    <mat-label class="white">Please enter a password</mat-label>
+                    <input class="white input" type="password" matInput formControlName="password" placeholder="Password">
+                    <mat-icon matSuffix>key</mat-icon>
+                </mat-form-field>
+            </p>
+            <p>
+                <a class="hyperlink" href="signup.component.html"> Don't have an account yet? Sign up here. </a>
+            </p>
+            <div class="button__container">
+                <button mat-raised-button style="margin: auto">
+                    <span>LOGIN</span>
+                </button>
             </div>
-        </form>
-            <div class="input-box">
-              <span class="ion ion-md-attach icon">key-outline</span>
-            <input type="password" required>
-            <label>Password</label>
+
         </div>
-        <div class="remember-forget">
-            <label><input type="checkbox"> Remember me</label>
-            <a href="#">Forgot Password?</a>
-        </div>
-        <button type="submit" class="btn">Login</button>
     </div>
 </div>

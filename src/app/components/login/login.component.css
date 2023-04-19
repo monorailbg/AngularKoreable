@@ -1,18 +1,21 @@
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+    background-color: unset;
+}
+
 .wrapper {
     position: relative;
-    width: 400px;
-    height: 440px;
+    width: 450px;
+    height: 490px;
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 30px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper  {
+.wrapper {
     color: #fff;
 }
 
@@ -22,9 +25,20 @@
 }
 
 .form-box h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
+    margin-bottom: 5rem;
+    font-family: "Amita";
 }
+
+.white {
+    color: white;
+}
+
+::ng-deep mat-form-field input::placeholder {
+    color: #FFF !important;
+}
+
 
 .input-box {
     position: relative;
@@ -46,7 +60,7 @@
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label  {
+.input-box input:valid~label {
     top: -5px;
 }
 
@@ -67,4 +81,19 @@
     right: 8px;
     font-size: 1.2em;
     line-height: 57px;
+}
+
+.input {
+    color: #fff !important;
+}
+
+button {
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.button__container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
 }
